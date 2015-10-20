@@ -8,5 +8,5 @@
 </form>
 
 <% @url.each do |url| %>
-<p><%= url.long_url %> | <a href = "/<%= url.unique_key %>"><%= url.unique_key %></a></p>
+<p><%= url.long_url %> | <a href = "/<%= url.unique_key %>" target='_blank'><%= url.unique_key %></a></p>
 <% end %>
