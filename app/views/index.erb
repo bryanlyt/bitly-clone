@@ -1,9 +1,12 @@
 <h1>Welcome to Sinatra!</h1>
 <p>Hello world! ┗(｀皿´)┛   ...... (⁎˃ᆺ˂)</p>
 
-<form action = "/url" method = "post">
+<form action = "/urls" method = "post">
 	Enter URL: 
-	<input type = "text" name = "long_url">
+	<input type = "text" name = "input">
 	<input type = "submit" value = "Submit">
 </form>
 
+<% @url.each do |url| %>
+<p><%= url.long_url %> | <a href = "/<%= url.unique_key %>"><%= url.unique_key %></a></p>
+<% end %>
