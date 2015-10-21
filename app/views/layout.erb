@@ -7,12 +7,37 @@
       href="/img/favicon.png" />
 
 	<meta charset = "utf-8">
-	<title>Hello, we don't bite!</title>
+	<title>UNLEASH THE POWER OF THE LINK</title>
 	<link rel = "stylesheet" type = "text/css" href = "/css/application.css" >
+
+
+
 </head>
 
 <body>
 
+
+<div class = "navbar">
+	<img src = "/img/b-icon.png" alt = "bitly" style = "height:25px;" class="left"> 
+
+	<div class="left">
+		&nbsp; PRODUCT TOUR &nbsp; &nbsp; &nbsp; RESOURCES &nbsp; &nbsp; &nbsp; PARTNERS &nbsp; &nbsp; &nbsp; SIGN UP
+	</div>
+
+	<div class = "entry">
+		<form class = "shortener" action = "/urls" method = "post">
+<!-- 	<a href="/urls" class="btn">shorten</a> -->
+	
+			<input type = "submit" class="btn" value = "Shorten!">
+
+			<input type = "text" name = "input" placeholder = "Paste a link to shorten it">
+		</form>
+	</div>
+</div>
+
+
+<h1>BITLY CLONE </h1>
+<h2>Drive app installs and re-engagement with deep linking by Bitly. Learn More -></h2>
 	<%= erb :"partials/bitly_form" %>
 	<%= yield %>
 

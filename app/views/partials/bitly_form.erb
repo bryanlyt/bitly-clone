@@ -1,31 +1,10 @@
 <div class = "container">
-
-<img src = "/img/b-icon.png" alt = "bitly" style = "height:50px;" align = "left">
-
-<div class = "form">
-
 <br>
-
-<form class = "shortener" action = "/urls" method = "post">
-
-	<div id = "submitbutton"><input type = "submit" value = "Shorten!"></div>
-
-	<div id = "linkinput"><input type = "text" name = "input" placeholder = "Paste a link to shorten it"></div>
-
-
-
-</form>
-
-<br>
-<br>
-
-<h1>UNLEASH THE POWER OF THE LINK <br>
-	┗(｀皿´)┛   ...... (⁎˃ᆺ˂)</h1>
-<h4>Here are your shortened links:</h4>
+<h4>Here are your shortened links: <br>
+	┗(｀皿´)┛   ...... (⁎˃ᆺ˂)</h4>
 
 
 <% @url.each do |url| %>
-<p><%= url.long_url %> | <a href = "/<%= url.unique_key %>" target='_blank'>localhost:9393/<%= url.unique_key %></a></p>
+<p><%= url.long_url %> --> <a href = "/<%= url.unique_key %>" target='_blank'>localhost:9393/<%= url.unique_key %></a></p>
 <% end %>
-</div>
 </div>
