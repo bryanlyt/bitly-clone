@@ -14,7 +14,7 @@ def shorten
 end
 
 def create_unique_key
-	key = [*"A".."Z", *"0".."9"]
+	key = [*"A".."Z", *"a".."z", *"0".."9"]
 	key.sample(6).join
 
 	# key = (6){[*"A".."Z", *"0".."9"].sample}.join

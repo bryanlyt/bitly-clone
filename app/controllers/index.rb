@@ -1,8 +1,6 @@
 get '/' do
 	# let user create new short URL, display a list of shortened URL
 	@url = Url.all
-	puts "[LOG] Getting /"
-	puts "[LOG] Params: #{params.inspect}"
 	erb :index
 end
 

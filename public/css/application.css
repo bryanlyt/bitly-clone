@@ -1,0 +1,48 @@
+body {
+	background-color: #ECF7FD;
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
+}
+
+h1 {
+	color: #52AEDB;  
+	text-align: center; 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+}
+
+.container {
+	margin: 20px auto;
+	width: 640px, 100%;
+	padding: 0px 20px 20px 20px;
+	border: 1px dotted black;
+}
+
+ 
+#submitbutton {
+    height:15px; 
+    width:150px; 
+    padding:5px 8px;
+    float: right;
+    overflow: auto;
+
+}
+
+
+#linkinput {
+    height:15px; 
+    width:220px; 
+    padding:5px 8px;
+    float: right;
+    overflow: auto;
+
+}
+
+/*
+.form input {
+    height:10px; 
+    width:220px; 
+    padding:5px 8px;
+    float: right;
+    overflow: auto;
+
+}
+*/
