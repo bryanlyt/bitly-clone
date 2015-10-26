@@ -1,10 +1,37 @@
 <div class = "container">
-<br>
+<center>
 <h4>Here are your shortened links: <br>
 	┗(｀皿´)┛   ...... (⁎˃ᆺ˂)</h4>
 
 
-<% @url.each do |url| %>
-<p><%= url.long_url %> --> <a href = "/<%= url.unique_key %>" target='_blank'>localhost:9393/<%= url.unique_key %></a></p>
-<% end %>
+<table id = "results" >
+    <thead>	
+	<tr>
+		<th> </th>
+		<th>Long URL</th>
+		<th>Shortened URL</th>
+    <th>Click(s)</th>
+	</tr>
+</thead>
+
+<tbody>
+  	<% @url.each do |url| %>
+ <tr>
+  <td class = "count"></td>
+  <td>
+  	<p><%= url.long_url %></p>
+  </td>
+  <td>
+	<p><a href = "/<%= url.unique_key %>" target='_blank'>localhost:9393/<%= url.unique_key %></a></p>
+  </td>
+<td>
+  <p><%= url.click_count%></p>
+  </td>
+ </tr>
+ <% end %>
+</tbody>
+</table>
+
+</center>
 </div>
+

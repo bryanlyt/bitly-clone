@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<link rel="icon" 
-      type="image/png" 
-      href="/img/favicon.png" />
-
-	<meta charset = "utf-8">
-	<title>UNLEASH THE POWER OF THE LINK</title>
-	<link rel = "stylesheet" type = "text/css" href = "/css/application.css" >
+<link rel="icon" type="image/png" href="/img/favicon.png" />
+<meta charset = "utf-8">
+<title>BITLY CLONE</title>
 
 
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/css/application.css" >
+<link href="pagination.css" media="all" rel="stylesheet" type="text/css" />
+
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Pagination -->
 
 </head>
 
 <body>
 
 
+
 <div class = "navbar">
-	<img src = "/img/b-icon.png" alt = "bitly" style = "height:25px;" class="left"> 
+	<img src = "/img/b-icon.png" alt = "bitly" style = "height:25px;" align = "left"> 
 
 	<div class="left">
-		&nbsp; PRODUCT TOUR &nbsp; &nbsp; &nbsp; RESOURCES &nbsp; &nbsp; &nbsp; PARTNERS &nbsp; &nbsp; &nbsp; SIGN UP
+		&nbsp; &nbsp; 
+		PRODUCT TOUR 
+		&nbsp; &nbsp; &nbsp; 
+		RESOURCES 
+		&nbsp; &nbsp; &nbsp; 
+		PARTNERS 
+		&nbsp; &nbsp; &nbsp; 
+		SIGN UP
 	</div>
 
 	<div class = "entry">
 		<form class = "shortener" action = "/urls" method = "post">
-<!-- 	<a href="/urls" class="btn">shorten</a> -->
 	
-			<input type = "submit" class="btn" value = "Shorten!">
+			<div class = "btn">
+				<input type = "submit" class="btn" value = "Shorten!">
+			</div>
 
 			<input type = "text" name = "input" placeholder = "Paste a link to shorten it">
 		</form>
 	</div>
 </div>
 
+<center>
+	<a href="/"><img src="/img/header-bitly.png" alt="BITLY CLONE" ></a>
+<br>
+<br>
+	<button id="toggle">How To Use?</button>
+<br>
+		<h2><u>Instruction:</u><br><br>
+			1. Enter your link in the input field at the top right corner and click 'Shorten!'. <br><br>
+			2. Your shortened URL will be shown at the beginning of the list below. <br><br>
+			3. You may copy the shortened URL or click on it as it will open in a new tab. <br><br>
+			4. Now pay me $5, thank you! x)<br><br>	
+		</h2>
+ 
+	<script>
+		/* TOGGLE SCRIPT */
+		$('h2').hide();
+		$( "#toggle" ).click(function() {
+		$( "h2" ).toggle( "fast")
+		});
+	</script>
+</center>
 
-<h1>BITLY CLONE </h1>
-<h2><u>Instruction:</u><br>
-	1. Paste your link in the input field at the top right corner. <br>
-	2. Your shortened URL will be shown in the display box below. <br>
-	3. Have fun with your shortened links!<br>
-	* All your past shortened links will also be displayed below.
-</h2>
 	<%= erb :"partials/bitly_form" %>
 	<%= yield %>
 

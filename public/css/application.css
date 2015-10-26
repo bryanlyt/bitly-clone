@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-	color: #BDBEC0;  
+	color: #626264;  
 	text-align: center; 
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
 	font-size: 12px;
@@ -23,52 +23,29 @@ h2 {
 	border: 1px dotted black;
 }
 
-
-.entry input {
-    height:18px; 
-    width:160px; 
-    padding:2px 8px;
-    float: right;
-    overflow: auto;
-    top:0;
-    position: relative;
-
+.navbar {
+  height:50px; 
+  width:650px, 100%; 
+  padding:10px 8px 10px 10px;
+  color: #ED6130;  
+  font-size: 15px;
 }
 
 .left {
 	float: left;
 	height: 10px;
+  padding-top: 5px;
 }
 
-.navbar {
-    height:50px; 
-    width:650px, 100%; 
-    padding:10px 8px 10px 10px;
-	color: #ED6130;  
-	font-size: 15px;
+.entry input {
+  height:18px; 
+  width:160px; 
+  padding:2px 8px;
+  float: right;
+  overflow: auto;
+  top:0;
+  position: relative;
 }
-
-
- /*
-#submitbutton {
-    height:15px; 
-    width:150px; 
-    padding:5px 8px;
-    float: right;
-    overflow: auto;
-
-}
-
-
-#linkinput {
-    height:30px; 
-    width:150px; 
-    padding:2px 80px;
-    float: right;
-    overflow: auto;
-
-}
-*/
 
 .btn {
   font-family: Arial;
@@ -76,7 +53,7 @@ h2 {
   font-size: 14px;
   background: #ED6130;
   text-decoration: none;
-  padding: 10px 15px 10px 15px;
+  padding: 3px 4px 4px 4px;
   border: 0;
   float: right;
   overflow: auto;
@@ -91,3 +68,25 @@ h2 {
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
+
+.hidden{
+  display:none;
+}
+
+/* TABLE PROPERTIES */
+th, td {
+  border: 1px dotted black;
+  padding: 1px 15px 1px 15px;
+  background-color: #F5F5F9;
+  color: black;
+  font-size: 13px;
+}
+
+table{counter-reset:section;}
+.count:before{
+  counter-increment:section;
+  content:counter(section);
+}
+
+/* PAGINATION */
+
