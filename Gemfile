@@ -37,3 +37,5 @@ group :production do
 end
 
 gem 'byebug'
+
+gem 'rack-flash-session'
