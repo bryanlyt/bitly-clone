@@ -28,6 +28,8 @@ GEM
     pg (0.18.3)
     puma (2.14.0)
     rack (1.6.4)
+    rack-flash-session (1.0.2)
+      rack (>= 1.0)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
@@ -85,6 +87,7 @@ DEPENDENCIES
   byebug
   pg
   puma
+  rack-flash-session
   rails_12factor
   rake
   rspec
