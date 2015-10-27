@@ -1,3 +1,6 @@
+DEPLOYMENT ON HEROKU: 
+https://immense-stream-3889.herokuapp.com/
+
 #Sinatra Web Server
 ## Repo details
 | Details   |  | 
